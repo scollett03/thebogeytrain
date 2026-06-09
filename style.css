@@ -51,8 +51,8 @@ body {
 .site-nav .nav-links { display: flex; gap: 2rem; }
 .site-nav .nav-links a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  font-size: 12px;
+  letter-spacing: 2px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
@@ -216,9 +216,10 @@ body {
   transition: color 0.2s;
 }
 .article-list-item .subtitle {
-  font-size: 13px;
-  color: var(--text-caption);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
 }
 
 /* ARTICLE PAGE */
