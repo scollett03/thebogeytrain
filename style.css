@@ -194,25 +194,34 @@ body {
 }
 .article-list-item {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   align-items: center;
-  padding: 1.25rem 0;
-  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--green-border);
   text-decoration: none;
   color: inherit;
 }
 .article-list-item:hover h3 { color: var(--green-dark); }
 .article-list-item .thumb {
-  width: 80px;
-  height: 60px;
+  width: 200px;
+  height: 130px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 4px;
   flex-shrink: 0;
 }
+.article-list-item .category-tag {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--green-light);
+  margin-bottom: 6px;
+}
 .article-list-item h3 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   transition: color 0.2s;
 }
 .article-list-item .subtitle {
@@ -220,6 +229,15 @@ body {
   color: var(--text-secondary);
   font-family: Georgia, 'Times New Roman', serif;
   font-style: italic;
+  display: block;
+  margin-bottom: 4px;
+}
+.article-list-item .meta {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: var(--text-caption);
+  margin-top: 4px;
 }
 
 /* ARTICLE PAGE */
@@ -354,6 +372,8 @@ body {
   .featured-article .featured-img { order: -1; }
   .featured-article .featured-text h2 { font-size: 22px; }
   .article-header h1 { font-size: 26px; }
+  .article-list-item .thumb { width: 140px; height: 95px; }
+  .article-list-item h3 { font-size: 16px; }
   .site-nav, .home-header, .featured-article, .article-list,
   .article-body, .about-content, .site-footer { padding-left: 1.25rem; padding-right: 1.25rem; }
 }
