@@ -1,0 +1,41 @@
+DEPLOYING THE BOGEY TRAIN
+==========================
+
+This is a static site — just HTML, CSS, and images. No server-side code.
+
+BEFORE YOU DEPLOY:
+1. Download your logo from your WordPress site:
+   https://thebogeytrain.com/wp-content/uploads/2023/09/transparent-square-edited.png
+2. Save it as: images/logo.png (in this folder)
+3. Find-and-replace in all HTML files:
+   Replace: https://thebogeytrain.com/wp-content/uploads/2023/09/transparent-square-edited.png
+   With: images/logo.png (in index.html & about.html) or ../images/logo.png (in articles/*.html)
+   (The site will still work without this step — it just pulls the logo from your WordPress site)
+
+OPTION A: DEPLOY TO NETLIFY (Easiest, Free)
+1. Go to https://app.netlify.com
+2. Sign up with your email or GitHub
+3. Click "Add new site" > "Deploy manually"
+4. Drag the entire "bogey-train-site" folder onto the page
+5. Done — you'll get a URL like https://something.netlify.app
+
+TO USE YOUR DOMAIN (thebogeytrain.com):
+1. In Netlify, go to Site settings > Domain management > Add custom domain
+2. Type: thebogeytrain.com
+3. Netlify will show you DNS records to set at your domain registrar
+4. At your registrar, update DNS to point to Netlify's servers
+5. Wait ~24 hours for DNS to propagate
+6. Cancel your WordPress hosting once the new site is live
+
+OPTION B: DEPLOY TO GITHUB PAGES (Also Free)
+1. Create a GitHub account if needed
+2. Create a new repository called "thebogeytrain"
+3. Upload all files from this folder
+4. Go to Settings > Pages > Source: "main" branch
+5. Your site will be at https://yourusername.github.io/thebogeytrain/
+6. To use a custom domain, add thebogeytrain.com in the Custom Domain field
+   and update DNS at your registrar
+
+YEARLY COST:
+- Hosting: $0 (Netlify or GitHub Pages)
+- Domain: ~$12/year (wherever you registered thebogeytrain.com)
